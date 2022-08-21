@@ -5,5 +5,10 @@ public class ModernFactory implements FurnitureFactory{
 	public Chair createChair() {
 		return new ModernChair();
 	}
+
+	@Override
+	public Table createTable() {
+		return new ModernTable();
+	}
 	
 }

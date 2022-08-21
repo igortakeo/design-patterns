@@ -1,7 +1,7 @@
 
 public class ModernChair implements Chair{
 	
-	public final int PRICE = 30;
+	private final int PRICE = 30;
 
 	@Override
 	public boolean hasLegs() {

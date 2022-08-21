@@ -5,14 +5,14 @@ public class Application {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Choose one type of chair: Modern or Victorian");
-		String chairType = sc.nextLine();
-		ChairStore store;
+		String type = sc.nextLine();
+		Store store;
 		FurnitureFactory factory;
 		
-		if(chairType.contains("Modern")) {
+		if(type.contains("Modern")) {
 			factory = new ModernFactory();
 		}
-		else if(chairType.contains("Victorian")) {
+		else if(type.contains("Victorian")) {
 			factory = new VictorianFactory();
 		}
 		else {
@@ -20,9 +20,11 @@ public class Application {
 			return;
 		}
 		
-		store = new ChairStore(factory);
+		store = new Store(factory);
 		
-		System.out.println("Has legs: " + store.hasLegs());
-		System.out.println("Price: " + store.getPrice());
+		System.out.println("Chair has legs: " + store.chairHasLegs());
+		System.out.println("Chair price: " + store.getChairPrice());
+		System.out.println("Table price: " + store.getTablePrice());
+		System.out.println("Table size: " + store.getTableSize());
 	}
 }

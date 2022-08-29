@@ -1,21 +1,21 @@
 
 public class Pizzaria {
 
-	public Pizza createCheesePizza(PizzaBuilder builder) {
-		builder.setSize(20);
+	public Pizza createCheesePizza(PizzaBuilder builder, int size) {
+		builder.setSize(size);
 		builder.withCheese();
 		return builder.getPizza();
 	}
 	
-	public Pizza createCHickenPizza(PizzaBuilder builder) {
-		builder.setSize(20);
+	public Pizza createChickenPizza(PizzaBuilder builder, int size) {
+		builder.setSize(size);
 		builder.withCheese();
 		builder.withChicken();
 		return builder.getPizza();
 	}
 	
-	public Pizza createAmericanPizza(PizzaBuilder builder) {
-		builder.setSize(20);
+	public Pizza createAmericanPizza(PizzaBuilder builder, int size) {
+		builder.setSize(size);
 		builder.withCheese();
 		builder.withBacon();
 		builder.withEgg();

@@ -17,6 +17,7 @@ public class Application {
 		}
 		else {
 			System.out.println("Incorrect input");
+			sc.close();
 			return;
 		}
 		
@@ -26,5 +27,6 @@ public class Application {
 		System.out.println("Chair price: " + store.getChairPrice());
 		System.out.println("Table price: " + store.getTablePrice());
 		System.out.println("Table size: " + store.getTableSize());
+		sc.close();
 	}
 }

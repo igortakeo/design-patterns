@@ -40,7 +40,6 @@ public class Application {
         ans = scanner.nextLine();
         channels.put("Slack", ans.equals("y") ? true : false);
 
-
         scanner.close();
 
         return channels;
